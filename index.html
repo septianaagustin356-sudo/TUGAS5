@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <!-- Viewport: wajib untuk Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal Akademik STTI NIIT I-Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container navbar">
+            <a class="brand" href="#beranda">🎓 STTI NIIT I-TECH</a>
+
+            <!-- Tombol menu (hanya tampil di layar HP) -->
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+                <a class="active" href="#beranda">Beranda</a>
+                <a href="#tentang">Profil</a>
+                <a href="#tentang">Program Studi</a>
+                <a href="#data">Informasi</a>
+                <a href="#daftar">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Selamat Datang di<br>STTI NIIT I-Tech</h1>
+                    <p>Membangun masa depan dengan teknologi dan pendidikan berkualitas.</p>
+                    <a class="button" href="#tentang">Jelajahi Program Studi &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about" id="tentang">
+            <div class="container about-grid">
+
+                <div class="about-text">
+                    <h2>Tentang Kami</h2>
+                    <p>STTI NIIT I-Tech adalah perguruan tinggi yang berfokus pada pengembangan teknologi informasi dan komunikasi untuk menghasilkan lulusan yang kompeten dan siap bersaing di dunia kerja.</p>
+                    <p>Dengan kurikulum yang relevan dan didukung oleh dosen profesional, kami berkomitmen untuk memberikan pendidikan terbaik bagi setiap mahasiswa.</p>
+                    <p>Bergabunglah bersama kami dan jadilah bagian dari generasi inovatif yang siap menghadapi tantangan era digital.</p>
+                </div>
+
+                <article class="info-card info-card-blue">
+                    <span class="info-icon">💻</span>
+                    <h3>Program Studi Unggulan</h3>
+                    <p>Kami menawarkan program studi unggulan yang relevan dengan kebutuhan industri, seperti Sistem Informasi, Teknik Informatika, dan bidang teknologi lainnya.</p>
+                    <a class="button button-outline" href="#data">Lihat Program Studi &rarr;</a>
+                </article>
+
+                <article class="info-card info-card-green">
+                    <span class="info-icon">👥</span>
+                    <h3>Fasilitas Lengkap</h3>
+                    <p>Didukung oleh laboratorium modern, akses internet cepat, dan lingkungan belajar yang nyaman untuk mendukung proses pembelajaran.</p>
+                    <a class="button button-outline" href="#tentang">Lihat Fasilitas &rarr;</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section-data">
+            <div class="container data-grid">
+                <article class="panel" id="data">
+                    <div class="panel-header">
+                        <span class="panel-icon">🎓</span>
+                        <div>
+                            <h2>Data Mahasiswa dan Nilai Akademik</h2>
+                            <p>Berikut adalah data mahasiswa program studi Sistem Informasi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pembungkus tabel: bisa digeser horizontal jika layar sempit -->
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="text-center">No</th>
+                                    <th>NIM</th>
+                                    <th>Nama Mahasiswa</th>
+                                    <th>Program Studi</th>
+                                    <th class="text-center">Nilai Akhir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center" data-label="No">1</td>
+                                    <td data-label="NIM">2024002</td>
+                                    <td data-label="Nama">Andi Pratama</td>
+                                    <td data-label="Program Studi">Sistem Informasi</td>
+                                    <td class="text-center" data-label="Nilai Akhir">85</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" data-label="No">2</td>
+                                    <td data-label="NIM">2024003</td>
+                                    <td data-label="Nama">Siti Rahma</td>
+                                    <td data-label="Program Studi">Sistem Informasi</td>
+                                    <td class="text-center" data-label="Nilai Akhir">85</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" data-label="No">3</td>
+                                    <td data-label="NIM">2024004</td>
+                                    <td data-label="Nama">Budi Santoso</td>
+                                    <td data-label="Program Studi">Teknik Informatika</td>
+                                    <td class="text-center" data-label="Nilai Akhir">85</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" data-label="No">4</td>
+                                    <td data-label="NIM">422510199</td>
+                                    <td data-label="Nama">Siti Azizah Amanah</td>
+                                    <td data-label="Program Studi">Teknik Informatika</td>
+                                    <td class="text-center" data-label="Nilai Akhir">85</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article class="panel" id="daftar">
+                    <div class="panel-header">
+                        <span class="panel-icon">👤</span>
+                        <div>
+                            <h2>Formulir Pendaftaran Mahasiswa</h2>
+                            <p>Isi data diri Anda untuk melakukan pendaftaran.</p>
+                        </div>
+                    </div>
+
+                    <form action="#" method="post">
+                        <div class="form-grid">
+                            <div>
+                                <label for="nama">Nama Lengkap *</label>
+                                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+                            </div>
+
+                            <div>
+                                <label for="nim">NIM *</label>
+                                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+                            </div>
+
+                            <div>
+                                <label for="prodi">Program Studi *</label>
+                                <select id="prodi" name="prodi" required>
+                                    <option value="">-- Pilih Program Studi --</option>
+                                    <option value="si">Sistem Informasi</option>
+                                    <option value="ti">Teknik Informatika</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+                            </div>
+
+                            <div class="form-wide">
+                                <label for="pesan">Pesan / Keterangan</label>
+                                <textarea id="pesan" name="pesan" rows="3" placeholder="Tuliskan pesan..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">➤ Kirim Pendaftaran</button>
+                    </form>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <div class="footer-brand">
+                <a class="brand" href="#beranda">🎓 STTI NIIT I-Tech</a>
+                <span class="footer-address">Jl. Asem II No.22, Jakarta Selatan</span>
+            </div>
+
+            <nav class="social" aria-label="Media Sosial">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">ig</a>
+                <a href="#" aria-label="YouTube">yt</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </nav>
+
+            <p class="copyright">&copy; 2026 STTI NIIT I-Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Buka/tutup menu navigasi pada layar kecil
+        var toggle = document.getElementById('navToggle');
+        var nav = document.getElementById('mainNav');
+        toggle.addEventListener('click', function () {
+            var open = nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+        nav.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                nav.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
